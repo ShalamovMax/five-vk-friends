@@ -1,0 +1,119 @@
+body {
+    width: calc(100% - 40px);
+    min-width: 335px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#content {
+    min-height: calc(100vh - 135px);
+}
+
+footer {
+    color: grey;
+    font-size: 0.8em;
+    min-height: 30px;
+    padding: 20px 10px;
+    text-align: center;
+    user-select: none;
+}
+
+footer span {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin: 3px;
+}
+
+footer a {
+    color: #2B587A;
+    padding: 2px;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+div.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.friend-card {
+    padding: 5px;
+    margin: 10px;
+    width: calc(100% - 40px);
+    border-radius: 3px;
+}
+
+div.friend-card img {
+    margin: 0 20px;
+    width: 100px;
+    border-radius: 50%;
+    height: 100%;
+}
+
+div.friend-card a {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.friend-name-box {
+    padding: 35px 5px;
+}
+
+div.friend-name-box p {
+    margin: 0;
+    color: black;
+    border-bottom: 2px solid #93b3cc;
+}
+
+#login-box {
+    margin-top: 26px;
+}
+
+#login-vk-link {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #4E729A;
+    border: 3px solid #2B587A;
+    border-radius: 9px;
+}
+
+#logout-link {
+    font-size: 16px;
+    color: #4a76a8;
+}
+
+@media only screen and (min-width: 750px) {
+    div.friend-card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    div.friend-card {
+        width: calc(33.3% - 40px);
+    }
+}
+
+@media (hover: hover) {
+    footer a:hover {
+        color: white;
+        background-color: #2B587A; 
+    }
+
+    div.friend-card:hover {
+        background-color: #f9f9f9;
+    }
+
+    #login-vk-link:hover {
+        background-color: #60c338;
+        border: 3px solid #47a022;
+    }
+
+    #logout-link:hover {
+        color: #1c5596;
+    }
+}

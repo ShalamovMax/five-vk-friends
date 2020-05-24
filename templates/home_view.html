@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Hello, {{ name }} <a id="logout-link" href="/logout">logout</a></h1>
+
+<h3>{{ message }}</h3>
+<div class="flex-box">
+    {% for friend in friends %}
+    
+    <div class="friend-card">
+        <a href="https://vk.com/id{{ friend.id }}" target="_blank">
+            <img src="{{ friend.photo_medium }}" alt="{{friend.first_name}} Avatar">
+            <div class="friend-name-box">
+                <p>{{ friend.first_name }} {{ friend.last_name }}</p>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}
