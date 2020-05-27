@@ -1,7 +1,5 @@
 # five VK Friends
 
-Demo Django server application with VK OAuth Authorization.
-
 ## Usage
 
 Running this project locally involves a lot of steps and I don't recommend it.
